@@ -13,13 +13,15 @@
 
 		{{>navbar}}
 
-		<div class="container">
+		<div class="container" id="wrapper">
 
-			<div class="row header">
-				{{>header}}
+			<div class="row" id="header">
+				<div class="span12">
+					{{>header}}
+				</div>
 			</div>
 
-			<div class="row content">
+			<div class="row" id="content">
 
 				<div class="span12">
 					{{{content}}}
@@ -27,7 +29,7 @@
 
 			</div>
 
-			<div class="row footer">
+			<div class="row" id="footer">
 			</div>
 
 		</div>

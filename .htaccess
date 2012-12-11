@@ -1,0 +1,3 @@
+RewriteRule ^(application|modules|system)/ - [F,L]
+
+RewriteRule .* index.php [PT]

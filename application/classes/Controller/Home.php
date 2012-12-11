@@ -8,4 +8,10 @@ class Controller_Home extends Controller {
 		$this->content = $this->renderer->render($view);
 	}
 
+	public function action_about()
+	{
+		$view = new View_Home_About;
+		$this->content = $this->renderer->render($view);
+	}
+
 }

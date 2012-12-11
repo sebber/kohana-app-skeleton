@@ -17,6 +17,14 @@ class View_Layout {
 		return $this->_title;
 	}
 
+	public function navigation()
+	{
+		return array(
+			array("Title" => "Home", "Path" => URL::site("/")),
+			array("Title" => "About", "Path" =>  URL::site("/about")),
+		);
+	}
+
 	public function content($content = NULL)
 	{
 		if(!empty($content))
