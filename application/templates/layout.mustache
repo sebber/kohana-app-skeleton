@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset=utf-8>
+
+		<title>{{title}}</title>
+
+
+		{{{stylesheets}}}
+		{{{scripts}}}
+	</head>
+	<body>
+
+		{{>navbar}}
+
+		<div class="container">
+
+			<div class="row header">
+				{{>header}}
+			</div>
+
+			<div class="row content">
+
+				<div class="span12">
+					{{{content}}}
+				</div>
+
+			</div>
+
+			<div class="row footer">
+			</div>
+
+		</div>
+	</body>
+</html>
