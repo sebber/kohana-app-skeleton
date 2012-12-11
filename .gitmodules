@@ -13,3 +13,9 @@
 [submodule "modules/tasks-assets"]
 	path = modules/tasks-assets
 	url = git://github.com/iGore/tasks-assets.git
+[submodule "modules/minion"]
+	path = modules/minion
+	url = git://github.com/kohana/minion.git
+[submodule "modules/unittest"]
+	path = modules/unittest
+	url = git://github.com/kohana/unittest.git
