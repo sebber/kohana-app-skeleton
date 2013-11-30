@@ -1,28 +1,26 @@
-<div class="navbar navbar-static-top navbar-inverse">
-    <div class="navbar-inner">
-	    <div class="container">
-	     
-		    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-		    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-			    <span class="icon-bar"></span>
-			    <span class="icon-bar"></span>
-			    <span class="icon-bar"></span>
-		    </a>
-		     
-		    <!-- Be sure to leave the brand out there if you want it shown -->
-		    <a class="brand" href="/">Application Skeleton</a>
-		     
-		    <!-- Everything you want hidden at 940px or less, place within here -->
-		    <div class="nav-collapse collapse">
-		    	<ul class="nav">
-					{{#navigation}}
-					<li class="">
-						<a href="{{Path}}">{{Title}}</a>
-					</li>
-					{{/navigation}}
-	            </ul>
-		    </div>
-	     
-	    </div>
+<div class="navbar navbar-inverse navbar-static-top ">
+  <div class="container">
+  	<div class="navbar-header">
+  		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  			<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+  		</button>
+    	<a class="navbar-brand" href="/">Application Skeleton</a>
+  	</div>    
+    
+     
+    <!-- Everything you want hidden at 940px or less, place within here -->
+    <div class="navbar-collapse collapse">
+    	<ul class="nav navbar-nav">
+				{{#navigation}}
+				<li class="">
+					<a href="{{Path}}">{{Title}}</a>
+				</li>
+				{{/navigation}}
+      </ul>
     </div>
+   
+  </div>
 </div>

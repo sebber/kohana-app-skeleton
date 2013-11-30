@@ -48,6 +48,9 @@ spl_autoload_register(array('Kohana', 'auto_load'));
  */
 //spl_autoload_register(array('Kohana', 'auto_load_lowercase'));
 
+
+Cookie::$salt = '1238ueajsif91';
+
 /**
  * Enable the Kohana auto-loader for unserialization.
  *
