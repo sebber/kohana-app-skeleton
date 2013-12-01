@@ -19,10 +19,7 @@ class View_Layout {
 
 	public function navigation()
 	{
-		return array(
-			array("Title" => "Home", "Path" => URL::site("/")),
-			array("Title" => "About", "Path" =>  URL::site("/about")),
-		);
+		return Kohana::$config->load('navigation');
 	}
 
 	public function content($content = NULL)

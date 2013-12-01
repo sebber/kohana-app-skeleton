@@ -125,12 +125,18 @@ Kohana::modules(array(
  */
 Route::set('about', 'about')
 	->defaults(array(
-		'controller' => 'home',
-		'action' 	 => 'about'
+		'controller' 	=> 'home',
+		'action'			=> 'about'
+	));
+
+Route::set('page', '<slug>', array('slug' => '[a-zA-Z0-9_-]+'))
+	->defaults(array(
+		'controller' 	=> 'page',
+		'action'			=> 'show',
 	));
 
 Route::set('default', '(<controller>(/<action>(/<id>)))')
 	->defaults(array(
-		'controller' => 'home',
-		'action'     => 'index',
+		'controller' 	=> 'home',
+		'action'     	=> 'index',
 	));
